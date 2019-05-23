@@ -5,11 +5,10 @@
  */
 package badania;
 
+import java.io.IOException;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -20,8 +19,8 @@ import javafx.stage.Stage;
 public class Badania extends Application {
     
     @Override
-    public void start(Stage primaryStage) {
-        Button btn = new Button();
+    public void start(Stage primaryStage) throws IOException {
+        /*Button btn = new Button();
         btn.setText("Say 'Hello World'");
         btn.setOnAction(new EventHandler<ActionEvent>() {
             
@@ -38,7 +37,17 @@ public class Badania extends Application {
         
         primaryStage.setTitle("Hello World!");
         primaryStage.setScene(scene);
+        primaryStage.show();*/
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(this.getClass().getResource("/badania_FX/MainScreen.fxml"));
+        StackPane stackPane = loader.load();
+        
+        Scene scene = new Scene(stackPane);
+        
+        primaryStage.setScene(scene);
         primaryStage.show();
+        primaryStage.setTitle("Program");
+        primaryStage.setResizable(true);
     
     }
 

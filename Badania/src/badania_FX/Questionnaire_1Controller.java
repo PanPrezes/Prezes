@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package badania.FX;
+package badania_FX;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -14,7 +14,7 @@ import javafx.fxml.Initializable;
  *
  * @author Prezes
  */
-public class MainScreenController implements Initializable {
+public class Questionnaire_1Controller implements Initializable {
 
     /**
      * Initializes the controller class.
