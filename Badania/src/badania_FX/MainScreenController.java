@@ -6,9 +6,12 @@
 package badania_FX;
 
 import java.awt.event.ActionEvent;
+import java.io.IOException;
 import javafx.application.Platform;
 import static javafx.application.Platform.exit;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.layout.Pane;
 
 /**
  * FXML Controller class
@@ -18,10 +21,20 @@ import javafx.fxml.FXML;
 
 public class MainScreenController {
 
-    
+    /**
+     *
+     * @param event
+     */
     @FXML
-    void end(ActionEvent event) {
+    public void ext() {
            exit();
+    }
+    @FXML
+    public void start() throws IOException {
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/badania_FX/Questionnaire_1.fxml"));
+        Pane pane = loader.load();
+        Questionnaire_1Controller questionnaire_1Controller = loader.getController(); //tu coś nie działa!
+       
     }
 
 }
