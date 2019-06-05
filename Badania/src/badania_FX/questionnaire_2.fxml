@@ -19,28 +19,32 @@
                       <Button mnemonicParsing="false" text="Zakończ" />
                     </items>
                   </ToolBar>
-                  <CheckBox layoutX="113.0" layoutY="127.0" mnemonicParsing="false" text="niet_krwawienie" />
-                  <CheckBox layoutX="113.0" layoutY="154.0" mnemonicParsing="false" text="krwiomocz" />
-                  <CheckBox layoutX="113.0" layoutY="181.0" mnemonicParsing="false" text="ból przy oddawaniu moczu" />
-                  <CheckBox layoutX="113.0" layoutY="209.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="389.0" text="częstomocz i uczucie niepełnego opróżnienia pęcherza po mikcji" />
-                  <CheckBox layoutX="113.0" layoutY="237.0" mnemonicParsing="false" text="ból w podbrzuszu " />
-                  <CheckBox layoutX="113.0" layoutY="264.0" mnemonicParsing="false" text="duże kłopoty przy oddawaniu moczu" />
-                  <CheckBox layoutX="113.0" layoutY="292.0" mnemonicParsing="false" text="osłabienie" />
-                  <CheckBox layoutX="113.0" layoutY="316.0" mnemonicParsing="false" text="guz_w_piersi" />
-                  <CheckBox layoutX="113.0" layoutY="344.0" mnemonicParsing="false" text="as_piersi" />
-                  <CheckBox layoutX="113.0" layoutY="372.0" mnemonicParsing="false" text="sk_na_piersi" />
-                  <CheckBox layoutX="536.0" layoutY="127.0" mnemonicParsing="false" text="wciek_brodawka" />
-                  <CheckBox layoutX="536.0" layoutY="154.0" mnemonicParsing="false" text="zmiana skórna" />
-                  <CheckBox layoutX="536.0" layoutY="181.0" mnemonicParsing="false" text="wyczówalny guz krokowy" />
-                  <CheckBox layoutX="536.0" layoutY="209.0" mnemonicParsing="false" text="asymetria gruczołu krokowego" />
-                  <CheckBox layoutX="536.0" layoutY="237.0" mnemonicParsing="false" text="sp_alkohol" />
-                  <CheckBox layoutX="536.0" layoutY="264.0" mnemonicParsing="false" text="chudnięcie " />
-                  <CheckBox layoutX="536.0" layoutY="292.0" mnemonicParsing="false" text="osłabiony apetyt" />
-                  <CheckBox layoutX="536.0" layoutY="316.0" mnemonicParsing="false" text="zmiana trybu wypróżniania" />
-                  <CheckBox layoutX="536.0" layoutY="344.0" mnemonicParsing="false" text="krwawy stolec" />
-                  <CheckBox layoutX="536.0" layoutY="372.0" mnemonicParsing="false" text="śluz w stolcu" />
+                  <CheckBox layoutX="113.0" layoutY="127.0" mnemonicParsing="false" onAction="#s1" text="niet_krwawienie" />
+                  <CheckBox layoutX="113.0" layoutY="154.0" mnemonicParsing="false" onAction="#s2" text="krwiomocz" />
+                  <CheckBox layoutX="113.0" layoutY="181.0" mnemonicParsing="false" onAction="#s3" text="ból przy oddawaniu moczu" />
+                  <CheckBox layoutX="113.0" layoutY="209.0" mnemonicParsing="false" onAction="#s4" prefHeight="23.0" prefWidth="389.0" text="częstomocz i uczucie niepełnego opróżnienia pęcherza po mikcji" />
+                  <CheckBox layoutX="113.0" layoutY="237.0" mnemonicParsing="false" onAction="#s5" text="ból w podbrzuszu " />
+                  <CheckBox layoutX="113.0" layoutY="264.0" mnemonicParsing="false" onAction="#s6" text="duże kłopoty przy oddawaniu moczu" />
+                  <CheckBox layoutX="113.0" layoutY="292.0" mnemonicParsing="false" onAction="#s7" text="osłabienie" />
+                  <CheckBox layoutX="113.0" layoutY="316.0" mnemonicParsing="false" onAction="#s8" text="guz_w_piersi" />
+                  <CheckBox layoutX="113.0" layoutY="344.0" mnemonicParsing="false" onAction="#s9" text="as_piersi" />
+                  <CheckBox layoutX="113.0" layoutY="372.0" mnemonicParsing="false" onAction="#s10" text="sk_na_piersi" />
+                  <CheckBox layoutX="113.0" layoutY="397.0" mnemonicParsing="false" onAction="#s11" text="wciek_brodawka" />
+                  <CheckBox layoutX="536.0" layoutY="180.0" mnemonicParsing="false" onAction="#s18" text="zmiana skórna" />
+                  <CheckBox layoutX="536.0" layoutY="207.0" mnemonicParsing="false" onAction="#s19" text="wyczówalny guz krokowy" />
+                  <CheckBox layoutX="536.0" layoutY="235.0" mnemonicParsing="false" onAction="#s20" text="asymetria gruczołu krokowego" />
+                  <CheckBox layoutX="536.0" layoutY="263.0" mnemonicParsing="false" text="sp_alkohol" />
+                  <CheckBox layoutX="536.0" layoutY="290.0" mnemonicParsing="false" onAction="#s15" text="chudnięcie " />
+                  <CheckBox layoutX="536.0" layoutY="318.0" mnemonicParsing="false" onAction="#s21" text="osłabiony apetyt" />
+                  <CheckBox layoutX="536.0" layoutY="342.0" mnemonicParsing="false" onAction="#s22" text="zmiana trybu wypróżniania" />
+                  <CheckBox layoutX="536.0" layoutY="370.0" mnemonicParsing="false" onAction="#s23" text="krwawy stolec" />
+                  <CheckBox layoutX="536.0" layoutY="398.0" mnemonicParsing="false" onAction="#s24" text="śluz w stolcu" />
                   <Button layoutX="361.0" layoutY="481.0" mnemonicParsing="false" text="wyniki" />
                   <Text layoutX="293.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uzupełnij symptomy które u ciebie wystąpiły" />
+                  <CheckBox layoutX="113.0" layoutY="422.0" mnemonicParsing="false" onAction="#s12" text="stan podgorączkowy" />
+                  <CheckBox layoutX="113.0" layoutY="446.0" mnemonicParsing="false" onAction="#s14" text="pokasływanie" />
+                  <CheckBox layoutX="536.0" layoutY="127.0" mnemonicParsing="false" onAction="#s16" text="uczucie osłabienia" />
+                  <CheckBox layoutX="536.0" layoutY="154.0" mnemonicParsing="false" onAction="#s17" text="ryzyko zachorowania na raka płuc" />
                </children>
             </AnchorPane>
         </content>

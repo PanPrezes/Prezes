@@ -19,7 +19,8 @@ import jess.JessException;
  */
 public class Badania extends Application {
     
-    public static int a2,a3,a5,a6,b2,b3,b4,b5,b8,c2,c3,c4,d2,d4,e3,e4,e6,e7,e8,f3,f4,f7,f8,g3,g7,g8,h8,i8,j8,k8,l8,m8;
+    public static int a2,a3,a5,a6,b2,b3,b4,b5,b8,c2,c3,c4,d2,d4,e3,e4,e6,e7,e8,f3,f4,f7,f8,g3,g7,g8,h8,i8,j8,k8,l8,m8; //zmienne czynników ryzyka
+    
 
     public Badania(int i) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -153,8 +154,144 @@ public class Badania extends Application {
         Badania.m8 = m8;
     }
 
-  
+  public static int s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s20,s21,s22,s23,s24; //zmienne symptomów
 
+    public static void setS1(int s1) {
+        Badania.s1 = s1;
+    }
+
+    public static void setS2(int s2) {
+        Badania.s2 = s2;
+    }
+
+    public static void setS3(int s3) {
+        Badania.s3 = s3;
+    }
+
+    public static void setS4(int s4) {
+        Badania.s4 = s4;
+    }
+
+    public static void setS5(int s5) {
+        Badania.s5 = s5;
+    }
+
+    public static void setS6(int s6) {
+        Badania.s6 = s6;
+    }
+
+    public static void setS7(int s7) {
+        Badania.s7 = s7;
+    }
+
+    public static void setS8(int s8) {
+        Badania.s8 = s8;
+    }
+
+    public static void setS9(int s9) {
+        Badania.s9 = s9;
+    }
+
+    public static void setS10(int s10) {
+        Badania.s10 = s10;
+    }
+
+    public static void setS11(int s11) {
+        Badania.s11 = s11;
+    }
+
+    public static void setS12(int s12) {
+        Badania.s12 = s12;
+    }
+
+    public static void setS13(int s13) {
+        Badania.s13 = s13;
+    }
+
+    public static void setS14(int s14) {
+        Badania.s14 = s14;
+    }
+
+    public static void setS15(int s15) {
+        Badania.s15 = s15;
+    }
+
+    public static void setS16(int s16) {
+        Badania.s16 = s16;
+    }
+
+    public static void setS17(int s17) {
+        Badania.s17 = s17;
+    }
+
+    public static void setS18(int s18) {
+        Badania.s18 = s18;
+    }
+
+    public static void setS19(int s19) {
+        Badania.s19 = s19;
+    }
+
+    public static void setS20(int s20) {
+        Badania.s20 = s20;
+    }
+
+    public static void setS21(int s21) {
+        Badania.s21 = s21;
+    }
+
+    public static void setS22(int s22) {
+        Badania.s22 = s22;
+    }
+
+    public static void setS23(int s23) {
+        Badania.s23 = s23;
+    }
+
+    public static void setS24(int s24) {
+        Badania.s24 = s24;
+    }
+
+  public static String K1,K2,K3,K4,K5,K6,K7,K8; // zmienne przechowujące komunikaty
+
+    public static void setK1(String K1) {
+        Badania.K1 = K1;
+    }
+
+    public static void setK2(String K2) {
+        Badania.K2 = K2;
+    }
+
+    public static void setK3(String K3) {
+        Badania.K3 = K3;
+    }
+
+    public static void setK4(String K4) {
+        Badania.K4 = K4;
+    }
+
+    public static void setK5(String K5) {
+        Badania.K5 = K5;
+    }
+
+    public static void setK6(String K6) {
+        Badania.K6 = K6;
+    }
+
+    public static void setK7(String K7) {
+        Badania.K7 = K7;
+    }
+
+    public static void setK8(String K8) {
+        Badania.K8 = K8;
+    }
+
+    
+
+   
+
+    
+  
        
     @Override
     public void start(Stage primaryStage) throws IOException {

@@ -88,97 +88,97 @@ Badania.d2=1;
 
     @FXML
     void d4(ActionEvent event) {
-
+Badania.d4=1;
     }
 
     @FXML
     void e3(ActionEvent event) {
-
+Badania.e3=1;
     }
 
     @FXML
     void e4(ActionEvent event) {
-
+Badania.e4=1;
     }
 
     @FXML
     void e6(ActionEvent event) {
-
+Badania.e6=1;
     }
 
     @FXML
     void e7(ActionEvent event) {
-
+Badania.e7=1;
     }
 
     @FXML
     void e8(ActionEvent event) {
-
+Badania.e8=1;
     }
 
     @FXML
     void f3(ActionEvent event) {
-
+Badania.f3=1;
     }
 
     @FXML
     void f4(ActionEvent event) {
-
+Badania.f4=1;
     }
 
     @FXML
     void f7(ActionEvent event) {
-
+Badania.f7=1;
     }
 
     @FXML
     void f8(ActionEvent event) {
-
+Badania.f8=1;
     }
 
     @FXML
     void g3(ActionEvent event) {
-
+Badania.g3=1;
     }
 
     @FXML
     void g7(ActionEvent event) {
-
+Badania.g7=1;
     }
 
     @FXML
     void g8(ActionEvent event) {
-
+Badania.g8=1;
     }
 
     @FXML
     void h8(ActionEvent event) {
-
+Badania.h8=1;
     }
 
     @FXML
     void i8(ActionEvent event) {
-
+Badania.i8=1;
     }
 
     @FXML
     void j8(ActionEvent event) {
-
+Badania.j8=1;
     }
 
     @FXML
     void k8(ActionEvent event) {
-
+Badania.k8=1;
     }
 
     @FXML
     void l8(ActionEvent event) {
-
+Badania.l8=1;
     }
 
     @FXML
     void m8(ActionEvent event) {
-
+Badania.m8=1;
     }
     
     

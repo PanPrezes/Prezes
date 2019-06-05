@@ -23,7 +23,6 @@ public class MainScreenController {
 
     /**
      *
-     * @param event
      */
     @FXML
     public void ext() {
