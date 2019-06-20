@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="badania_FX.MainWindowController">
+   <children>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0">
+        <content>
+          <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="858.0">
+               <children>
+                  <ToolBar>
+                    <items>
+                      <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ext" text="Zakończ" />
+                    </items>
+                  </ToolBar>
+                  <Button layoutX="280.0" layoutY="469.0" mnemonicParsing="false" onAction="#start" text="Początek" AnchorPane.leftAnchor="280.0" AnchorPane.rightAnchor="280.80000000000007" />
+                  <Text fill="#588712" fontSmoothingType="LCD" layoutX="141.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Witaj w nowoczesnym programie do diagnozy i wczesnego wykrywania chorób nowotworowych. Pamiętaj, że wczesne wykrycie choroby to lepsze leczenie i szansa na dłuższe życie. Za chwile zobaczysz ankiety, wypełnij je zgodnie z prawdą. Zaczynajmy!" textAlignment="CENTER" wrappingWidth="576.9995765686035">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</StackPane>

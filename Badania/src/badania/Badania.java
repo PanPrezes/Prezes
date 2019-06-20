@@ -5,254 +5,239 @@
  */
 package badania;
 
-import java.io.IOException;
+import java.io.StringWriter;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import jess.JessException;
+import jess.Rete;
 
 /**
  *
  * @author Prezes
  */
 public class Badania extends Application {
-    
-    public static int a2,a3,a5,a6,b2,b3,b4,b5,b8,c2,c3,c4,d2,d4,e3,e4,e6,e7,e8,f3,f4,f7,f8,g3,g7,g8,h8,i8,j8,k8,l8,m8; //zmienne czynników ryzyka
-    
+public static Rete engine;
+    public static int pal_tyton, dos_antykoncepcja, lamp_sol, otylosc, prac_srod_chem,            //
+            sz_miesiaczka, stan_podgoraczkowy, prom_ultraf, dieta_w_tluszcze, przewl_inf_ukl_mocz,//
+            poz_w_rodzenia, w_rak_piersi, cz_spoz_cz_mies, wiek_pow_59,                     //zmienne czynników ryzyka
+            spo_pok_smazonych, sp_alkohol, rak_grucz_brat, spo_pok_grill,                     //
+            menopauza_otylosc, rak_grucz_ojciec, wiek_pow_49, brat_jelito,                        //
+            siostra_jelito, ojciec_jelito, matka_jelito, dziadek_jelito, babcia_jelito;           //
 
-    public Badania(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public static void setA2(int pal_tyton) {
+        Badania.pal_tyton = pal_tyton;
     }
 
-    public static void setA2(int a2) {
-        Badania.a2 = a2;
+    public static void setDos_antykoncepcja(int dos_antykoncepcja) {
+        Badania.dos_antykoncepcja = dos_antykoncepcja;
     }
 
-    public static void setA3(int a3) {
-        Badania.a3 = a3;
+    public static void setLamp_sol(int lamp_sol) {
+        Badania.lamp_sol = lamp_sol;
     }
 
-    public static void setA5(int a5) {
-        Badania.a5 = a5;
+    public static void setOtylosc(int otylosc) {
+        Badania.otylosc = otylosc;
     }
 
-    public static void setA6(int a6) {
-        Badania.a6 = a6;
+    public static void setPrac_srod_chem(int prac_srod_chem) {
+        Badania.prac_srod_chem = prac_srod_chem;
     }
 
-    public static void setB2(int b2) {
-        Badania.b2 = b2;
+    public static void setSz_miesiaczka(int sz_miesiaczka) {
+        Badania.sz_miesiaczka = sz_miesiaczka;
     }
 
-    public static void setB3(int b3) {
-        Badania.b3 = b3;
+    public static void setStan_podgoraczkowy(int stan_podgoraczkowy) {
+        Badania.stan_podgoraczkowy = stan_podgoraczkowy;
     }
 
-    public static void setB4(int b4) {
-        Badania.b4 = b4;
+    public static void setProm_ultraf(int prom_ultraf) {
+        Badania.prom_ultraf = prom_ultraf;
     }
 
-    public static void setB5(int b5) {
-        Badania.b5 = b5;
+    public static void setDieta_w_tluszcze(int dieta_w_tluszcze) {
+        Badania.dieta_w_tluszcze = dieta_w_tluszcze;
     }
 
-    public static void setB8(int b8) {
-        Badania.b8 = b8;
+    public static void setPrzewl_inf_ukl_mocz(int przewl_inf_ukl_mocz) {
+        Badania.przewl_inf_ukl_mocz = przewl_inf_ukl_mocz;
     }
 
-    public static void setC2(int c2) {
-        Badania.c2 = c2;
+    public static void setPoz_w_rodzenia(int poz_w_rodzenia) {
+        Badania.poz_w_rodzenia = poz_w_rodzenia;
     }
 
-    public static void setC3(int c3) {
-        Badania.c3 = c3;
+    public static void setW_rak_piersi(int w_rak_piersi) {
+        Badania.w_rak_piersi = w_rak_piersi;
     }
 
-    public static void setC4(int c4) {
-        Badania.c4 = c4;
+    public static void setCz_spoz_cz_mies(int cz_spoz_cz_mies) {
+        Badania.cz_spoz_cz_mies = cz_spoz_cz_mies;
     }
 
-    public static void setD2(int d2) {
-        Badania.d2 = d2;
+    public static void setWiek_pow_59(int wiek_pow_59) {
+        Badania.wiek_pow_59 = wiek_pow_59;
     }
 
-    public static void setD4(int d4) {
-        Badania.d4 = d4;
+    public static void setSpo_pok_smazonych(int spo_pok_smazonych) {
+        Badania.spo_pok_smazonych = spo_pok_smazonych;
     }
 
-    public static void setE3(int e3) {
-        Badania.e3 = e3;
+    public static void setSp_alkohol(int sp_alkohol) {
+        Badania.sp_alkohol = sp_alkohol;
     }
 
-    public static void setE4(int e4) {
-        Badania.e4 = e4;
+    public static void setRak_grucz_brat(int rak_grucz_brat) {
+        Badania.rak_grucz_brat = rak_grucz_brat;
     }
 
-    public static void setE6(int e6) {
-        Badania.e6 = e6;
+    public static void setSpo_pok_grill(int spo_pok_grill) {
+        Badania.spo_pok_grill = spo_pok_grill;
     }
 
-    public static void setE7(int e7) {
-        Badania.e7 = e7;
+    public static void setMenopauza_otylosc(int menopauza_otylosc) {
+        Badania.menopauza_otylosc = menopauza_otylosc;
     }
 
-    public static void setE8(int e8) {
-        Badania.e8 = e8;
+    public static void setRak_grucz_ojciec(int rak_grucz_ojciec) {
+        Badania.rak_grucz_ojciec = rak_grucz_ojciec;
     }
 
-    public static void setF3(int f3) {
-        Badania.f3 = f3;
+    public static void setWiek_pow_49(int wiek_pow_49) {
+        Badania.wiek_pow_49 = wiek_pow_49;
     }
 
-    public static void setF4(int f4) {
-        Badania.f4 = f4;
+    public static void setBrat_jelito(int brat_jelito) {
+        Badania.brat_jelito = brat_jelito;
     }
 
-    public static void setF7(int f7) {
-        Badania.f7 = f7;
+    public static void setSiostra_jelito(int siostra_jelito) {
+        Badania.siostra_jelito = siostra_jelito;
     }
 
-    public static void setF8(int f8) {
-        Badania.f8 = f8;
+    public static void setOjciec_jelito(int ojciec_jelito) {
+        Badania.ojciec_jelito = ojciec_jelito;
     }
 
-    public static void setG3(int g3) {
-        Badania.g3 = g3;
+    public static void setMatka_jelito(int matka_jelito) {
+        Badania.matka_jelito = matka_jelito;
     }
 
-    public static void setG7(int g7) {
-        Badania.g7 = g7;
+    public static void setDziadek_jelito(int dziadek_jelito) {
+        Badania.dziadek_jelito = dziadek_jelito;
     }
 
-    public static void setG8(int g8) {
-        Badania.g8 = g8;
+    public static void setBabcia_jelito(int babcia_jelito) {
+        Badania.babcia_jelito = babcia_jelito;
     }
 
-    public static void setH8(int h8) {
-        Badania.h8 = h8;
+    public static int niet_krwawienie, krw_mocz, bol_odd_mocz, czest_mocz_niepel_oproz_pech, // 
+            bol_podbrz, prob_odd_mocz, oslabienie, guz_w_piersi, as_piersi, sk_na_piersi,    //
+            wciek_brodawka, s12, st_podgoraczkowy, pokaslywanie, chudniecie,                 //zmienne symptomów
+            uczucie_oslabienia, ryz_zachor_rak_pluc, zmiana_skorna, wycz_guz_krok,           //
+            as_grucz_krok, s21, zm_tr_wyprozniania, kr_stolec, st_stolcu;                    //
+
+    public static void setNiet_krwawienie(int niet_krwawienie) {
+        Badania.niet_krwawienie = niet_krwawienie;
     }
 
-    public static void setI8(int i8) {
-        Badania.i8 = i8;
+    public static void setKrw_mocz(int krw_mocz) {
+        Badania.krw_mocz = krw_mocz;
     }
 
-    public static void setJ8(int j8) {
-        Badania.j8 = j8;
+    public static void setBol_odd_mocz(int bol_odd_mocz) {
+        Badania.bol_odd_mocz = bol_odd_mocz;
     }
 
-    public static void setK8(int k8) {
-        Badania.k8 = k8;
+    public static void setCzest_mocz_niepel_oproz_pech(int czest_mocz_niepel_oproz_pech) {
+        Badania.czest_mocz_niepel_oproz_pech = czest_mocz_niepel_oproz_pech;
     }
 
-    public static void setL8(int l8) {
-        Badania.l8 = l8;
+    public static void setBol_podbrz(int bol_podbrz) {
+        Badania.bol_podbrz = bol_podbrz;
     }
 
-    public static void setM8(int m8) {
-        Badania.m8 = m8;
+    public static void setProb_odd_mocz(int prob_odd_mocz) {
+        Badania.prob_odd_mocz = prob_odd_mocz;
     }
 
-  public static int s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s20,s21,s22,s23,s24; //zmienne symptomów
-
-    public static void setS1(int s1) {
-        Badania.s1 = s1;
+    public static void setOslabienie(int oslabienie) {
+        Badania.oslabienie = oslabienie;
     }
 
-    public static void setS2(int s2) {
-        Badania.s2 = s2;
+    public static void setGuz_w_piersi(int guz_w_piersi) {
+        Badania.guz_w_piersi = guz_w_piersi;
     }
 
-    public static void setS3(int s3) {
-        Badania.s3 = s3;
+    public static void setAs_piersi(int as_piersi) {
+        Badania.as_piersi = as_piersi;
     }
 
-    public static void setS4(int s4) {
-        Badania.s4 = s4;
+    public static void setSk_na_piersi(int sk_na_piersi) {
+        Badania.sk_na_piersi = sk_na_piersi;
     }
 
-    public static void setS5(int s5) {
-        Badania.s5 = s5;
-    }
-
-    public static void setS6(int s6) {
-        Badania.s6 = s6;
-    }
-
-    public static void setS7(int s7) {
-        Badania.s7 = s7;
-    }
-
-    public static void setS8(int s8) {
-        Badania.s8 = s8;
-    }
-
-    public static void setS9(int s9) {
-        Badania.s9 = s9;
-    }
-
-    public static void setS10(int s10) {
-        Badania.s10 = s10;
-    }
-
-    public static void setS11(int s11) {
-        Badania.s11 = s11;
+    public static void setWciek_brodawka(int wciek_brodawka) {
+        Badania.wciek_brodawka = wciek_brodawka;
     }
 
     public static void setS12(int s12) {
         Badania.s12 = s12;
     }
 
-    public static void setS13(int s13) {
-        Badania.s13 = s13;
+    public static void setSt_podgoraczkowy(int st_podgoraczkowy) {
+        Badania.st_podgoraczkowy = st_podgoraczkowy;
     }
 
-    public static void setS14(int s14) {
-        Badania.s14 = s14;
+    public static void setPokaslywanie(int pokaslywanie) {
+        Badania.pokaslywanie = pokaslywanie;
     }
 
-    public static void setS15(int s15) {
-        Badania.s15 = s15;
+    public static void setChudniecie(int chudniecie) {
+        Badania.chudniecie = chudniecie;
     }
 
-    public static void setS16(int s16) {
-        Badania.s16 = s16;
+    public static void setUczucie_oslabienia(int uczucie_oslabienia) {
+        Badania.uczucie_oslabienia = uczucie_oslabienia;
     }
 
-    public static void setS17(int s17) {
-        Badania.s17 = s17;
+    public static void setRyz_zachor_rak_pluc(int ryz_zachor_rak_pluc) {
+        Badania.ryz_zachor_rak_pluc = ryz_zachor_rak_pluc;
     }
 
-    public static void setS18(int s18) {
-        Badania.s18 = s18;
+    public static void setZmiana_skorna(int zmiana_skorna) {
+        Badania.zmiana_skorna = zmiana_skorna;
     }
 
-    public static void setS19(int s19) {
-        Badania.s19 = s19;
+    public static void setWycz_guz_krok(int wycz_guz_krok) {
+        Badania.wycz_guz_krok = wycz_guz_krok;
     }
 
-    public static void setS20(int s20) {
-        Badania.s20 = s20;
+    public static void setAs_grucz_krok(int as_grucz_krok) {
+        Badania.as_grucz_krok = as_grucz_krok;
     }
 
     public static void setS21(int s21) {
         Badania.s21 = s21;
     }
 
-    public static void setS22(int s22) {
-        Badania.s22 = s22;
+    public static void setZm_tr_wyprozniania(int zm_tr_wyprozniania) {
+        Badania.zm_tr_wyprozniania = zm_tr_wyprozniania;
     }
 
-    public static void setS23(int s23) {
-        Badania.s23 = s23;
+    public static void setKr_stolec(int kr_stolec) {
+        Badania.kr_stolec = kr_stolec;
     }
 
-    public static void setS24(int s24) {
-        Badania.s24 = s24;
+    public static void setSt_stolcu(int st_stolcu) {
+        Badania.st_stolcu = st_stolcu;
     }
 
-  public static String K1,K2,K3,K4,K5,K6,K7,K8; // zmienne przechowujące komunikaty
+    public static String K1, K2, K3, K4, K5, K6, K7, K8; // zmienne przechowujące komunikaty
 
     public static void setK1(String K1) {
         Badania.K1 = K1;
@@ -286,54 +271,39 @@ public class Badania extends Application {
         Badania.K8 = K8;
     }
 
-    
-
+  @Override
+    public void start(Stage primaryStage) throws Exception {
+       
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/badania_FX/MainScreen.fxml"));
+        StackPane stackPane = loader.load();
+        Scene scene = new Scene(stackPane);
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("Program");
+        primaryStage.show();
+        primaryStage.setResizable(false);
+    }
    
 
-    
-  
-       
-    @Override
-    public void start(Stage primaryStage) throws IOException {
-        /*Button btn = new Button();
-        btn.setText("Say 'Hello World'");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
-            
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
-            }
-        });
-        
-        StackPane root = new StackPane();
-        root.getChildren().add(btn);
-        
-        Scene scene = new Scene(root, 300, 250);
-        
-        primaryStage.setTitle("Hello World!");
-        primaryStage.setScene(scene);
-        primaryStage.show();*/
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(this.getClass().getResource("/badania_FX/MainScreen.fxml"));
-        StackPane stackPane = loader.load();
-        
-        Scene scene = new Scene(stackPane);
-        
-        primaryStage.setScene(scene);
-        primaryStage.show();
-        primaryStage.setTitle("Program");
-        primaryStage.setResizable(true);
+    public static String queryInferenceEngine(String s) throws JessException {
+        // Create a Jess rule engine
+        engine = new Rete();
+        engine.reset();
+        StringWriter o = new StringWriter();
+        engine.addOutputRouter("t", o);
+        String result = "";
+        engine.batch("projekt/JESS/diagnose.clp");
+        engine.eval(s);
+        engine.run();
+
+        result = o.toString();
+        engine.clear();
+        if (result == null ? "" == null : result.equals("")) {
+            result = "No cancer was diagnosed"
+                    + " Please try again";
+        }
+        return result;
+   
     
     }
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) throws JessException {
-        launch(args);
-        
-     
-        
-    }
-    
 }

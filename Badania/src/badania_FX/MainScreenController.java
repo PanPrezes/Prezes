@@ -5,13 +5,17 @@
  */
 package badania_FX;
 
-import java.awt.event.ActionEvent;
 import java.io.IOException;
 import javafx.application.Platform;
 import static javafx.application.Platform.exit;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -21,19 +25,37 @@ import javafx.scene.layout.Pane;
 
 public class MainScreenController {
 
+  
+
     /**
      *
      */
-    @FXML
-    public void ext() {
-           exit();
+       @FXML
+    private StackPane mainStackPane;
+
+  @FXML
+    public void initialize() throws IOException {
+
+        loadMainWindowScreen();
     }
-    @FXML
-    public void start() throws IOException {
-        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/badania_FX/Questionnaire_1.fxml"));
+  
+    public void loadMainWindowScreen() throws IOException {
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/badania_FX/MainWindowScreen.fxml"));
         Pane pane = loader.load();
-        Questionnaire_1Controller questionnaire_1Controller = loader.getController(); //tu coś nie działa!
+
+        MainWindowController MainWindowController = loader.getController();
+        MainWindowController.setMainScreenController(this);
+        mainStackPane.getChildren().add(pane);
+
+    }
+
+    public void setScreen(Pane pane) {
+        mainStackPane.getChildren().clear();
+        mainStackPane.getChildren().add(pane);
+    }
+
+     
        
     }
 
-}
+

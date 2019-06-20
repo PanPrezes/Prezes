@@ -6,7 +6,6 @@
 package badania_FX;
 
 import badania.Badania;
-import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -22,124 +21,124 @@ public class Questionnaire_2Controller implements Initializable {
     /**
      * Initializes the controller class.
      */
-     @FXML
-    void s1(ActionEvent event) {
-Badania.s1=1;
+    private MainScreenController mainScreenController;
+   
+    @FXML
+    void s1() {
+        Badania.niet_krwawienie = 1;
     }
 
     @FXML
-    void s10(ActionEvent event) {
-Badania.s10=1;
+    void s10() {
+        Badania.sk_na_piersi = 1;
     }
 
     @FXML
-    void s11(ActionEvent event) {
-Badania.s11=1;
+    void s11() {
+        Badania.wciek_brodawka = 1;
     }
 
     @FXML
-    void s13(ActionEvent event) {
-Badania.s13=1;
+    void s13() {
+        Badania.st_podgoraczkowy = 1;
     }
 
     @FXML
-    void s14(ActionEvent event) {
-Badania.s14=1;
+    void s14() {
+        Badania.pokaslywanie = 1;
     }
 
     @FXML
-    void s15(ActionEvent event) {
-Badania.s15=1;
+    void s15() {
+        Badania.chudniecie = 1;
     }
 
     @FXML
-    void s16(ActionEvent event) {
-Badania.s16=1;
+    void s16() {
+        Badania.uczucie_oslabienia = 1;
     }
 
     @FXML
-    void s17(ActionEvent event) {
-Badania.s17=1;
+    void s17() {
+        Badania.ryz_zachor_rak_pluc = 1;
     }
 
     @FXML
-    void s18(ActionEvent event) {
-Badania.s18=1;
+    void s18() {
+        Badania.zmiana_skorna = 1;
     }
 
     @FXML
-    void s19(ActionEvent event) {
-Badania.s19=1;
+    void s19() {
+        Badania.wycz_guz_krok = 1;
     }
 
     @FXML
-    void s2(ActionEvent event) {
-Badania.s2=1;
+    void s2() {
+        Badania.krw_mocz = 1;
     }
 
     @FXML
-    void s20(ActionEvent event) {
-Badania.s20=1;
+    void s20() {
+        Badania.as_grucz_krok = 1;
     }
 
     @FXML
-    void s21(ActionEvent event) {
-Badania.s21=1;
+    void s22() {
+        Badania.zm_tr_wyprozniania = 1;
     }
 
     @FXML
-    void s22(ActionEvent event) {
-Badania.s22=1;
+    void s23() {
+        Badania.kr_stolec = 1;
     }
 
     @FXML
-    void s23(ActionEvent event) {
-Badania.s23=1;
+    void s24() {
+        Badania.st_stolcu = 1;
     }
 
     @FXML
-    void s24(ActionEvent event) {
-Badania.s24=1;
+    void s3() {
+        Badania.bol_odd_mocz = 1;
     }
 
     @FXML
-    void s3(ActionEvent event) {
-Badania.s3=1;
+    void s4() {
+        Badania.czest_mocz_niepel_oproz_pech = 1;
     }
 
     @FXML
-    void s4(ActionEvent event) {
-Badania.s4=1;
+    void s5() {
+        Badania.bol_podbrz = 1;
     }
 
     @FXML
-    void s5(ActionEvent event) {
-Badania.s5=1;
+    void s6() {
+        Badania.prob_odd_mocz = 1;
     }
 
     @FXML
-    void s6(ActionEvent event) {
-Badania.s6=1;
+    void s7() {
+        Badania.oslabienie = 1;
     }
 
     @FXML
-    void s7(ActionEvent event) {
-Badania.s7=1;
+    void s8() {
+        Badania.guz_w_piersi = 1;
     }
 
     @FXML
-    void s8(ActionEvent event) {
-Badania.s8=1;
-    }
-
-    @FXML
-    void s9(ActionEvent event) {
-Badania.s9=1;
+    void s9() {
+        Badania.as_piersi = 1;
     }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-    
+    }
+ public void setMainScreenController(MainScreenController main) {
+        this.mainScreenController = main;
+    } 
+
 }
