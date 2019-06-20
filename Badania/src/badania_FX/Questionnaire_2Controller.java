@@ -60,7 +60,7 @@ public class Questionnaire_2Controller implements Initializable {
 
     @FXML
     void s17() {
-        Badania.ryz_zachor_rak_pluc = 1;
+        Badania.ryz_zach_rak_pluc = 1;
     }
 
     @FXML
@@ -82,6 +82,11 @@ public class Questionnaire_2Controller implements Initializable {
     void s20() {
         Badania.as_grucz_krok = 1;
     }
+    
+   @FXML
+   void s21() {
+       Badania.os_apetyt = 1;
+   }
 
     @FXML
     void s22() {

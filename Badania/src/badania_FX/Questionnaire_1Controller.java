@@ -56,11 +56,6 @@ Badania.sz_miesiaczka=1;
     }
 
     @FXML
-    void b4() {
-Badania.stan_podgoraczkowy=1;
-    }
-
-    @FXML
     void b5() {
 Badania.prom_ultraf=1;
     }
@@ -78,6 +73,10 @@ Badania.przewl_inf_ukl_mocz=1;
     @FXML
     void c3() {
 Badania.poz_w_rodzenia=1;
+    }
+      @FXML
+    void c8() {
+Badania.br_akt_fizycznej=1;
     }
 
     @FXML

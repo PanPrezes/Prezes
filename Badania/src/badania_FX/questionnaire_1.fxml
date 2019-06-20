@@ -28,18 +28,12 @@
                   <CheckBox layoutX="27.0" layoutY="239.0" mnemonicParsing="false" onAction="#a2" text="palenie tytoniu" />
                   <CheckBox layoutX="28.0" layoutY="263.0" mnemonicParsing="false" onAction="#b2" text="praca ze środkami chemicznymi" />
                   <CheckBox layoutX="28.0" layoutY="291.0" mnemonicParsing="false" onAction="#c2" text="przewlekłe infekcje układu moczowego" />
-                  <CheckBox layoutX="27.0" layoutY="319.0" mnemonicParsing="false" onAction="#d2" text="brak aktywności fizycznej" />
                   <CheckBox layoutX="27.0" layoutY="350.0" mnemonicParsing="false" onAction="#a3" text="dos_antykoncepcja" />
                   <CheckBox layoutX="28.0" layoutY="378.0" mnemonicParsing="false" onAction="#b3" text="sz_miesiączka" />
                   <CheckBox layoutX="28.0" layoutY="405.0" mnemonicParsing="false" onAction="#c3" text="poz_w_rodzenia" />
                   <CheckBox layoutX="300.0" layoutY="74.0" mnemonicParsing="false" onAction="#e3" text="w_rak_piersi" />
                   <CheckBox layoutX="301.0" layoutY="101.0" mnemonicParsing="false" onAction="#f3" text="sp_alkohol" />
                   <CheckBox layoutX="300.0" layoutY="128.0" mnemonicParsing="false" onAction="#g3" text="menopauza_otyłość" />
-                  <CheckBox layoutX="300.0" layoutY="156.0" mnemonicParsing="false" onAction="#b4" text="stan podgorączkowy" />
-                  <CheckBox layoutX="301.0" layoutY="184.0" mnemonicParsing="false" onAction="#c4" text="pokasływanie" />
-                  <CheckBox layoutX="301.0" layoutY="211.0" mnemonicParsing="false" onAction="#d4" text="chudnięcie" />
-                  <CheckBox layoutX="300.0" layoutY="239.0" mnemonicParsing="false" onAction="#e4" text="uczucie osłabienia " />
-                  <CheckBox layoutX="300.0" layoutY="263.0" mnemonicParsing="false" onAction="#f4" text="ryzyko zachorowania na raka płuc" />
                   <CheckBox layoutX="301.0" layoutY="291.0" mnemonicParsing="false" onAction="#a5" text="lampa w solarium" />
                   <CheckBox layoutX="300.0" layoutY="319.0" mnemonicParsing="false" onAction="#b5" text="promienie ultrafioletowe" />
                   <CheckBox layoutX="300.0" layoutY="350.0" mnemonicParsing="false" onAction="#e6" text="częste spożywanie czerwonego mięsa" />
@@ -59,6 +53,7 @@
                   <CheckBox layoutX="579.0" layoutY="378.0" mnemonicParsing="false" onAction="#m8" text="babcia_jelito" />
                   <Button layoutX="325.0" layoutY="514.0" mnemonicParsing="false" onAction="#next" prefHeight="26.0" prefWidth="204.0" text="Dalej" />
                   <Text layoutX="326.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uzupełnij czynniki ryzyka" />
+                  <CheckBox layoutX="300.0" layoutY="156.0" mnemonicParsing="false" onAction="#c8" text="brak aktywności fizycznej" />
                </children>
             </AnchorPane>
         </content>

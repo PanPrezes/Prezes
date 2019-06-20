@@ -21,9 +21,9 @@ import jess.Rete;
 public class Badania extends Application {
 public static Rete engine;
     public static int pal_tyton, dos_antykoncepcja, lamp_sol, otylosc, prac_srod_chem,            //
-            sz_miesiaczka, stan_podgoraczkowy, prom_ultraf, dieta_w_tluszcze, przewl_inf_ukl_mocz,//
-            poz_w_rodzenia, w_rak_piersi, cz_spoz_cz_mies, wiek_pow_59,                     //zmienne czynników ryzyka
-            spo_pok_smazonych, sp_alkohol, rak_grucz_brat, spo_pok_grill,                     //
+            sz_miesiaczka, br_akt_fizycznej, prom_ultraf, dieta_w_tluszcze, przewl_inf_ukl_mocz,//
+            poz_w_rodzenia, w_rak_piersi, cz_spoz_cz_mies, wiek_pow_59,                           //zmienne czynników ryzyka
+            spo_pok_smazonych, sp_alkohol, rak_grucz_brat, spo_pok_grill,                         //
             menopauza_otylosc, rak_grucz_ojciec, wiek_pow_49, brat_jelito,                        //
             siostra_jelito, ojciec_jelito, matka_jelito, dziadek_jelito, babcia_jelito;           //
 
@@ -51,8 +51,8 @@ public static Rete engine;
         Badania.sz_miesiaczka = sz_miesiaczka;
     }
 
-    public static void setStan_podgoraczkowy(int stan_podgoraczkowy) {
-        Badania.stan_podgoraczkowy = stan_podgoraczkowy;
+    public static void setBr_akt_fizycznej(int br_akt_fizycznej) {
+        Badania.br_akt_fizycznej = br_akt_fizycznej;
     }
 
     public static void setProm_ultraf(int prom_ultraf) {
@@ -138,8 +138,8 @@ public static Rete engine;
     public static int niet_krwawienie, krw_mocz, bol_odd_mocz, czest_mocz_niepel_oproz_pech, // 
             bol_podbrz, prob_odd_mocz, oslabienie, guz_w_piersi, as_piersi, sk_na_piersi,    //
             wciek_brodawka, s12, st_podgoraczkowy, pokaslywanie, chudniecie,                 //zmienne symptomów
-            uczucie_oslabienia, ryz_zachor_rak_pluc, zmiana_skorna, wycz_guz_krok,           //
-            as_grucz_krok, s21, zm_tr_wyprozniania, kr_stolec, st_stolcu;                    //
+            uczucie_oslabienia, ryz_zach_rak_pluc, zmiana_skorna, wycz_guz_krok,           //
+            as_grucz_krok, os_apetyt, zm_tr_wyprozniania, kr_stolec, st_stolcu;                    //
 
     public static void setNiet_krwawienie(int niet_krwawienie) {
         Badania.niet_krwawienie = niet_krwawienie;
@@ -205,8 +205,8 @@ public static Rete engine;
         Badania.uczucie_oslabienia = uczucie_oslabienia;
     }
 
-    public static void setRyz_zachor_rak_pluc(int ryz_zachor_rak_pluc) {
-        Badania.ryz_zachor_rak_pluc = ryz_zachor_rak_pluc;
+    public static void setRyz_zach_rak_pluc(int ryz_zach_rak_pluc) {
+        Badania.ryz_zach_rak_pluc = ryz_zach_rak_pluc;
     }
 
     public static void setZmiana_skorna(int zmiana_skorna) {
@@ -221,8 +221,8 @@ public static Rete engine;
         Badania.as_grucz_krok = as_grucz_krok;
     }
 
-    public static void setS21(int s21) {
-        Badania.s21 = s21;
+    public static void setOs_apetyt(int os_apetyt) {
+        Badania.os_apetyt = os_apetyt;
     }
 
     public static void setZm_tr_wyprozniania(int zm_tr_wyprozniania) {
@@ -302,7 +302,7 @@ public static Rete engine;
                     + " Please try again";
         }
         return result;
-   
+    
     
     }
 
